@@ -1,0 +1,14 @@
+{
+  "name": "health-medical",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "grunt": "~1.0.1",
+    "grunt-bless": "^1.0.2",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-pot": "^0.3.0",
+    "grunt-sass": "~2.0.0",
+    "grunt-sync": "^0.6.2",
+    "node-sass": "~4.5.2"
+  }
+}

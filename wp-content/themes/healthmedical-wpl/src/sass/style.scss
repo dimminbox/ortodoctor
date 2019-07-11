@@ -1,0 +1,57 @@
+/*
+Theme Name: HealthMedical WPL
+Theme URI: https://wplook.com/product/themes/business/medical-wordpress-theme/
+Author: WPlook Studio, Victor Tihai
+Author URI: https://wplook.com/
+Description: Premium WordPress Theme for Health & Medical Institutions, dentist, etc.
+Version: 2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: healthmedical-wpl
+Domain Path: /languages
+*/
+
+/* TABLE OF CONTENT
+- [ Variables;
+- [ Settings;
+- [ Foundation;
+- [ Font Awesome;
+- [ Fonts;
+- [ Global;
+- [ Helpers;
+- [ Icons;
+- [ Icons Secondary;
+- [ Animate;
+- [ Layout;
+--- [ Intro;
+--- [ Header;
+--- [ Sections;
+--- [ Main;
+--- [ Sidebar;
+--- [ Footer;
+- [ Modules;
+--- [ Add/Banner;
+--- [ Audio;
+--- [ Breadcrumbs;
+--- [ Buttons;
+--- [ Form Elements;
+--- [ Pagination;
+--- [ Phone;
+--- [ Sliders;
+--- [ Socials;
+--- [ Subscribe;
+--- [ Tabs;
+--- [ Media Element Player;
+--- [ Search;
+*/
+
+@import 'variables';
+@import 'vendor';
+@import 'fonts';
+@import 'global';
+@import 'helpers';
+@import 'icons';
+@import '_icons-secondary';
+@import 'layout/_layout';
+@import 'modules/_modules';
