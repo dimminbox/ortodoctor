@@ -266,34 +266,28 @@ class wplook_services_widget extends WP_Widget {
 					<?php } ?>
 					<div class="columns large-12 medium-12">
 						<section class="section-features">
-							<?php if($title) { ?><h2><?php echo esc_attr($title); ?></h2><?php } ?>
-							<?php if($subtitle) { ?><h6><?php echo esc_attr($subtitle); ?></h6><?php } ?>
-								<ul class="list-features small-block-grid-1 medium-block-grid-3 large-block-grid-4" itemscope itemtype="http://schema.org/Product">
-									<?php while( $services->have_posts() ) : $services->the_post(); ?>
-										<li>
-											<p class="service-title" itemprop="name">
-												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-											</p>
-
-											<?php if( has_post_thumbnail() ) { ?>
-												<div class="service-image">
-													<a href="<?php the_permalink(); ?>">
-														<?php the_post_thumbnail('doctorthumb-image'); ?>
-													</a>
-												</div><!-- /.service-image -->
-											<?php } ?>
-
-											<?php the_excerpt(); ?>
-										</li>
-									<?php endwhile; wp_reset_postdata(); ?>
-								</ul><!-- /.list-features -->
-
-							<div class="section-actions">
-								<a href="<?php echo esc_url($link); ?>" class="button btn-light-blue btn-small"><?php echo esc_attr($linktext); ?></a>
-							</div><!-- /.section-actions -->
-
-
-
+							<h2>Преимущества Формтотикс</h2>
+							<div style="height: 30px;"></div>
+								<ul class="list-features small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+									<li>
+										<p class="service-title" itemprop="name">Удобство и комфорт</p>
+										<div class="service-image"><img src="/wp-content/uploads/2019/07/comfort.jpg" /></div>
+										<p>При повседневной ходьбе наши стельки разгрузят стопу и вы будете с комфортом проводить время.</p>
+									</li>
+									
+									<li>
+										<p class="service-title" itemprop="name">Безопасность</p>
+										<div class="service-image"><img src="/wp-content/uploads/2019/07/safity.jpg" /></div>
+										<p>При занятиях спортом и туризмом стельки за счёт более точного контроля движений, снизят риск травм и помогут улучшить результаты.</p>
+									</li>
+									
+									<li>
+										<p class="service-title" itemprop="name">Качество</p>
+										<div class="service-image"><img src="/wp-content/uploads/2019/07/quality.jpg" /></div>
+										<p>Технология Formotics из Новой Зеландии развивается уже более 40 лет, помогая людям по всему миру. Стельки при правильном обращении смогут выполнять свои функции более 5 лет.</p>
+									</li>
+								</ul>
+							</div>
 						</section><!-- /.section-features -->
 					</div><!-- /.columns .large-6 -->
 				</div>

@@ -26,10 +26,10 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 define('DB_NAME', 'ortodocto3_0');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'ortodocto3_0');
+define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'OC4UWCYE');
+define('DB_PASSWORD', 'u9yIITHNQ');
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'localhost');
