@@ -162,6 +162,7 @@ class wplook_about_widget extends WP_Widget {
 	/*-----------------------------------------------------------------------------------*/
 
 	public function widget( $args, $instance ) {
+	
 		global $post;
 		extract( $args );
 		$title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
@@ -184,23 +185,16 @@ class wplook_about_widget extends WP_Widget {
 				<?php } ?>
 				<div class="columns <?php echo $image ? 'large-6 medium-6 small-12' : 'large-12 medium-12'; ?>">
 					<section class="section-about-us section-about-us-text">
-						<h2><?php echo esc_attr($title); ?></h2>
-						<h6><?php echo esc_attr($subtitle); ?></h6>
-						<h3><?php echo esc_attr($highlight); ?></h3>
-						<p><?php echo $text; ?></p>
-						<div class="section-actions">
-							<a href="<?php echo esc_url($link); ?>" class="button btn-light-blue btn-small"><?php echo esc_attr($linktext); ?></a>
-						</div><!-- /.section-actions -->
+						<h2>О ФормТотикс</h2>
+						<p>Индивидуальные стельки ФормТотикс производятся из специально разработанного термопластичного материала, который позволяет им «отслеживать» поведение конкретной стопы и «приспосабливаться» к ней, принимая необходимую форму. Иными словами, индивидуальные стельки ФормТотикс подобно мокрому песку полностью охватывают стопу человека, повторяя ее индивидуальные анатомические углубления. В индивидуальных стельках ФормТотикс человек начинает свободнее поддерживать равновесие, надежнее координировать передвижение тела, лучше ходить, меньше уставать, быстрее бегать.</p>
+						<div class="col-xs-12 col-sm-12 item-center">
+					<video src="/wp-content/uploads/video1.mp4" controls width="100%"></video>
+				
+
+				</div>
 					</section><!-- /.section-about-us -->
 				</div><!-- /.columns .large-6 -->
 
-				<?php if( $image ) : ?>
-					<div class="columns large-6 medium-6">
-						<section class="section-about-us section-about-us-image">
-							<img src="<?php echo esc_url( $image ); ?>" alt="<?php _e( 'About us image', 'healthmedical-wpl' ); ?>">
-						</section><!-- /.section-about-us -->
-					</div><!-- /.columns .large-6 -->
-				<?php endif; ?>
 			</div>
 		</div>
 	<?php echo $after_widget;

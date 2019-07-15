@@ -122,7 +122,7 @@ class wplook_cf7_home_widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		global $post;
 		extract( $args );
-
+return;
 		$title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
 		$subtitle = isset( $instance['subtitle'] ) ? esc_attr( $instance['subtitle'] ) : '';
 		$icon = isset( $instance['icon'] ) ? esc_attr( $instance['icon'] ) : '';

@@ -112,9 +112,8 @@ class wplook_departments_widget_home extends WP_Widget {
 				</div><!-- /.section-ribbon -->
 			<?php } ?>
 			<header class="section-head">
-				<h2><?php echo esc_attr($title); ?></h2>
-
-				<h6><?php echo esc_attr($subtitle); ?></h6>
+				<h2>Индивидуальный подход</h2>
+				<h6>Наша цель - сделать работу стопы полноценной.</h6>
 			</header><!-- /.section-head -->
 
 			<?php

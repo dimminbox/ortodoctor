@@ -240,7 +240,10 @@ class wplook_doctors_widget extends WP_Widget {
 			$services = new WP_Query( $args );
 		?>
 
-			<?php if( $services->have_posts() ) : ?>
+			<?php 
+			if( $services->have_posts() ) : 
+			//if (false):
+			?>
 
 				<?php echo $before_widget; ?>
 
@@ -248,13 +251,12 @@ class wplook_doctors_widget extends WP_Widget {
 				<section class="section section-doctors">
 					<?php if($icon) { ?>
 						<div class="section-ribbon">
-							<i class="<?php echo esc_attr($icon); ?>"></i>
+							<i class="icon-medical-footsteps"></i>
 						</div><!-- /.section-ribbon -->
 					<?php } ?>
 					<header class="section-head">
-						<?php if($title) { ?><h2><?php echo esc_attr($title); ?></h2><?php } ?>
+						<?php if($title) { ?><h2>Ортопедические стельки</h2><?php } ?>
 
-						<?php if($subtitle) { ?><h6><?php echo esc_attr($subtitle); ?></h6><?php } ?>
 					</header><!-- /.section-head -->
 
 					<div class="row">
@@ -303,7 +305,7 @@ class wplook_doctors_widget extends WP_Widget {
 
 											<a href="<?php the_permalink(); ?>" class="link-more">
 												<i class="fa fa-plus"></i>
-												<?php _e('Find out more', 'healthmedical-wpl'); ?>
+												Больше
 											</a>
 										</div><!-- /.doctor-body -->
 									</div><!-- /.doctor-box -->
@@ -313,11 +315,6 @@ class wplook_doctors_widget extends WP_Widget {
 
 					</div><!-- /.row -->
 
-					<?php if( !empty($link) || !empty($linktext) ) { ?>
-						<div class="section-actions">
-							<a href="<?php echo esc_url($link); ?>" class="button btn-grey btn-small"><?php echo esc_attr($linktext); ?></a>
-						</div><!-- /.section-actions -->
-					<?php } ?>
 				</section><!-- /.section-doctors -->
 
 				<?php echo $after_widget; ?>
