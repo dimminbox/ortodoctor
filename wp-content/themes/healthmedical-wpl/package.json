@@ -9,6 +9,6 @@
     "grunt-pot": "^0.3.0",
     "grunt-sass": "~2.0.0",
     "grunt-sync": "^0.6.2",
-    "node-sass": "~4.5.2"
+    "node-sass": "~4.13.1"
   }
 }
